@@ -1,0 +1,20 @@
+{
+  "type": "postgres",
+  "host": "127.0.0.1",
+  "port": 5432,
+  "username": "typeormdemo",
+  "password": "123",
+  "database": "postgres",
+  "entities": [
+    "**/*.entity{.ts,.js}"
+  ],
+  "migrationsTableName": "migration",
+  "migrations": [
+    "src/db/migrations/*.ts"
+  ],
+  "synchronize": true,
+  "cli": {
+    "migrationsDir": "src/db/migrations"
+  },
+  "ssl": false
+}
